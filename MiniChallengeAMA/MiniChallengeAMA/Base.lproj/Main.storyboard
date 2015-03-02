@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -29,6 +30,26 @@
                                     <action selector="BAtualizarPosicao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Fd-eh-ckV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5C-WQ-3TV">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Pesquisar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="262" y="481" width="68" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="BPesquisar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mtg-3w-Whl"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kJS-ll-E8I">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="28" width="348" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -43,33 +64,38 @@
                             <mask key="subviews">
                                 <exclude reference="xqU-9d-omb"/>
                                 <exclude reference="wbh-hQ-lHw"/>
+                                <exclude reference="B5C-WQ-3TV"/>
+                                <exclude reference="kJS-ll-E8I"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="QbB-rO-gOR"/>
+                                <exclude reference="6u1-wq-hXP"/>
+                                <exclude reference="jgY-WF-hje"/>
                                 <exclude reference="6UG-Uz-AME"/>
                                 <exclude reference="GuV-jJ-uA8"/>
                                 <exclude reference="eY1-U5-C3K"/>
-                                <exclude reference="6u1-wq-hXP"/>
-                                <exclude reference="jgY-WF-hje"/>
-                                <exclude reference="QbB-rO-gOR"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="xqU-9d-omb"/>
                                 <include reference="wbh-hQ-lHw"/>
+                                <include reference="B5C-WQ-3TV"/>
+                                <include reference="kJS-ll-E8I"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="QbB-rO-gOR"/>
+                                <include reference="6u1-wq-hXP"/>
+                                <include reference="jgY-WF-hje"/>
                                 <include reference="6UG-Uz-AME"/>
                                 <include reference="GuV-jJ-uA8"/>
                                 <include reference="eY1-U5-C3K"/>
-                                <include reference="6u1-wq-hXP"/>
-                                <include reference="jgY-WF-hje"/>
-                                <include reference="QbB-rO-gOR"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="Mapa" destination="xqU-9d-omb" id="khI-GK-jgE"/>
+                        <outlet property="TextoEndereco" destination="kJS-ll-E8I" id="g8L-w9-dyl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
