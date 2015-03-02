@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xqU-9d-omb">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbh-hQ-lHw">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Atualizar Posicao">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BAtualizarPosicao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Fd-eh-ckV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xqU-9d-omb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="6UG-Uz-AME"/>
+                            <constraint firstItem="wbh-hQ-lHw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="6u1-wq-hXP"/>
+                            <constraint firstItem="xqU-9d-omb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="62" id="GuV-jJ-uA8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wbh-hQ-lHw" secondAttribute="bottom" constant="89" id="QbB-rO-gOR"/>
+                            <constraint firstItem="xqU-9d-omb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eY1-U5-C3K"/>
+                            <constraint firstItem="wbh-hQ-lHw" firstAttribute="top" secondItem="xqU-9d-omb" secondAttribute="bottom" constant="81" id="jgY-WF-hje"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xqU-9d-omb"/>
+                                <exclude reference="wbh-hQ-lHw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6UG-Uz-AME"/>
+                                <exclude reference="GuV-jJ-uA8"/>
+                                <exclude reference="eY1-U5-C3K"/>
+                                <exclude reference="6u1-wq-hXP"/>
+                                <exclude reference="jgY-WF-hje"/>
+                                <exclude reference="QbB-rO-gOR"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="xqU-9d-omb"/>
+                                <include reference="wbh-hQ-lHw"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6UG-Uz-AME"/>
+                                <include reference="GuV-jJ-uA8"/>
+                                <include reference="eY1-U5-C3K"/>
+                                <include reference="6u1-wq-hXP"/>
+                                <include reference="jgY-WF-hje"/>
+                                <include reference="QbB-rO-gOR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="Mapa" destination="xqU-9d-omb" id="khI-GK-jgE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="307"/>
+        </scene>
+    </scenes>
+</document>
