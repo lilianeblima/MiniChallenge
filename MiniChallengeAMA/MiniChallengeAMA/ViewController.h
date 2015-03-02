@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet MKMapView *Mapa;
 
 - (IBAction)BAtualizarPosicao:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *TextoEndereco;
+- (IBAction)BPesquisar:(id)sender;
 
 @end
 

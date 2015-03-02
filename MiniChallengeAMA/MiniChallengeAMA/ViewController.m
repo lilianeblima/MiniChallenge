@@ -7,18 +7,22 @@
 //
 
 #import "ViewController.h"
-#import "ViewController.h"
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import<CoreLocation/CoreLocation.h>
+#import "Annotation.h"
 
 
 
 @interface ViewController ()
 {
     int AtualizarPosicao;
+    CLPlacemark *thePlacemark;
+    MKRoute *routeDetails;
+
 }
+
 
 @property CLLocationManager *locationManager;
 @end
@@ -75,27 +79,17 @@
     //    //Mudar a região atual para visualização de forma animada
     if(AtualizarPosicao==0)
     {
+        [_Mapa removeAnnotations:[_Mapa annotations]];
         [_Mapa setRegion:region animated:YES ];
+        
+        MKPointAnnotation *pm = [[MKPointAnnotation alloc]init];
+        [pm setCoordinate:CLLocationCoordinate2DMake(loc.latitude, loc.longitude)];
+        
+        [_Mapa addAnnotation:pm];
         AtualizarPosicao=1;
     }
-    //
-    //Instanciar o MKPointAnnotation
-    //Anonotation *pm = [[Anonotation alloc]init];
-    
-    
-    
-    
-    //
-    //    //Determinar a localização do MKPointAnnotation
-    //   pm.coordinate = loc.coordinate;
-    //
-    //    //Outra forma de Determinar a localização do MKPointAnnotation
-    // [pm setCoordinate:loc.coordinate];
-    //
-    //    //Adicionar pm ao mapa
-    
-    
-    
+
+  
 }
 
 
@@ -107,5 +101,9 @@
 
 - (IBAction)BAtualizarPosicao:(id)sender {
     AtualizarPosicao = 0;
+
 }
+- (IBAction)BPesquisar:(id)sender {
+}
+
 @end

@@ -18,6 +18,7 @@
 		11CB8AC81AA4D7F200C078E0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CB8AC71AA4D7F200C078E0 /* CoreLocation.framework */; };
 		11CB8ACA1AA4D7FA00C078E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CB8AC91AA4D7FA00C078E0 /* Foundation.framework */; };
 		11CB8ACC1AA4D80200C078E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11CB8ACB1AA4D80200C078E0 /* CoreGraphics.framework */; };
+		11CB8ACF1AA4DFF100C078E0 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CB8ACE1AA4DFF100C078E0 /* Annotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		11CB8AC71AA4D7F200C078E0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		11CB8AC91AA4D7FA00C078E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		11CB8ACB1AA4D80200C078E0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		11CB8ACD1AA4DFF100C078E0 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		11CB8ACE1AA4DFF100C078E0 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +102,10 @@
 			children = (
 				11CB8AA31AA4D74300C078E0 /* AppDelegate.h */,
 				11CB8AA41AA4D74300C078E0 /* AppDelegate.m */,
-				11CB8AA61AA4D74300C078E0 /* ViewController.h */,
 				11CB8AA71AA4D74300C078E0 /* ViewController.m */,
+				11CB8AA61AA4D74300C078E0 /* ViewController.h */,
+				11CB8ACD1AA4DFF100C078E0 /* Annotation.h */,
+				11CB8ACE1AA4DFF100C078E0 /* Annotation.m */,
 				11CB8AA91AA4D74300C078E0 /* Main.storyboard */,
 				11CB8AAC1AA4D74300C078E0 /* Images.xcassets */,
 				11CB8AAE1AA4D74300C078E0 /* LaunchScreen.xib */,
@@ -237,6 +242,7 @@
 			files = (
 				11CB8AA81AA4D74300C078E0 /* ViewController.m in Sources */,
 				11CB8AA51AA4D74300C078E0 /* AppDelegate.m in Sources */,
+				11CB8ACF1AA4DFF100C078E0 /* Annotation.m in Sources */,
 				11CB8AA21AA4D74300C078E0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +436,7 @@
 				11CB8AC11AA4D74300C078E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11CB8AC21AA4D74300C078E0 /* Build configuration list for PBXNativeTarget "MiniChallengeAMATests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +445,7 @@
 				11CB8AC41AA4D74300C078E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
