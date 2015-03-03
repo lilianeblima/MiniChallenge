@@ -60,11 +60,9 @@
     
 
     
-
-   
-    
-    
 }
+
+
 
 
 
@@ -95,14 +93,11 @@
    // [_Mapa setRegion:region animated:YES ];
     
     
-    
+
+
     
     
 }
-
-
-
-
 
 
 - (void)didReceiveMemoryWarning {
@@ -145,5 +140,13 @@
     [_Mapa addAnnotation:pm];
  
 }
+
+
+
+
+
+
+
+
 
 @end
